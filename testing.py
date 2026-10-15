@@ -9,5 +9,5 @@ def get_user(username):
     query = "SELECT * FROM users WHERE username = '" + username + "'"
     cursor.execute(query)
     print("hello")
-
+    print("bava)
     return cursor.fetchall()
