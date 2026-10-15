@@ -8,5 +8,6 @@ def get_user(username):
     # Intentionally vulnerable: SQL injection
     query = "SELECT * FROM users WHERE username = '" + username + "'"
     cursor.execute(query)
+    print("hello")
 
     return cursor.fetchall()
